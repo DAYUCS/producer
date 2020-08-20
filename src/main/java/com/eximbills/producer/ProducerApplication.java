@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class ProducerApplication {
 
-	@Value("${topic:knative-demo-topic}")
+	@Value("${TOPIC:knative-demo-topic}")
 	private String topic;
 
 	public static void main(String[] args) {
