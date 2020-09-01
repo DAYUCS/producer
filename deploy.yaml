@@ -45,9 +45,7 @@ spec:
               value: "true"
             - name: OPENTRACING_JAEGER_ENABLE-B3-PROPAGATION
               value: "true"
-            - name: OPENTRACING_JAEGER_UDP_SENDER_HOST
-              value: "jaeger-agent.istio-system.svc"
-            - name: OPENTRACING_JAEGER_UDP_SENDER_PORT
-              value: "5775"
+            - name: OPENTRACING_JAEGER_HTTP_SENDER_URL
+              value: "http://zipkin.istio-system.svc:9441/api/traces"
             - name: OPENTRACING_JAEGER_PROBABILISTIC_SAMPLER_SAMPLING_RATE
-              value: "0.0"
+              value: "1.0"
