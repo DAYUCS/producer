@@ -46,6 +46,6 @@ spec:
             - name: OPENTRACING_JAEGER_ENABLE-B3-PROPAGATION
               value: "true"
             - name: OPENTRACING_JAEGER_HTTP_SENDER_URL
-              value: "http://zipkin.istio-system.svc:9441/api/traces"
+              value: "http://zipkin.istio-system.svc:9411/api/traces"
             - name: OPENTRACING_JAEGER_PROBABILISTIC_SAMPLER_SAMPLING_RATE
               value: "1.0"
